@@ -1,5 +1,5 @@
 body {
-    background-color: #f0efd1;
+    background-color: #FDF4DC;
     font-family: "Lato", sans-serif !important;
     font-weight: lighter;
     color: #333;
@@ -23,32 +23,6 @@ body {
     margin: 0 auto;
 }
 
-.topnav {
-    overflow: hidden;
-    /* background-color: #333; */
-    /* justify-content: center;
-    align-items: center; */
-    display: block;
-}
-
-.topnav a {
-    float: left;
-    color: #333;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-.topnav a:hover {
-    color: black;
-}
-
-.topnav a.active {
-    color: black;
-    font-weight: 700;
-}
-
 .sidenav {
     position: absolute;
     z-index: 1;
@@ -58,17 +32,36 @@ body {
     padding: 8px 0;
 }
 
-.sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 1rem;
-    color: #333;
-    display: flexbox;
-}
-
 .sidenav a.active {
     color: black;
     font-weight: 700;
+}
+
+.sidenav a {
+    color: black;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flexbox;
+    position: relative;
+}
+
+.sidenav a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    background: rgb(112, 103, 103);
+    transition: width 0.4s ease 0s, left 0.4s ease 0s;
+    width: 0;
+}
+
+.sidenav a:hover:after {
+    width: 100%;
+    left: 0;
 }
 
 .cv {
