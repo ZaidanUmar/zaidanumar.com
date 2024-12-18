@@ -89,7 +89,6 @@ body {
     font-size: 18px;
 }
 
-
 .content img {
     width: 200px;
     height: auto;
@@ -104,10 +103,11 @@ body {
     margin-left: 1rem;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
     text-decoration: none;
     color: inherit;
-  }
+}
 
 h1,
 p {
